@@ -6,6 +6,12 @@ class Themes {
         colorScheme: ColorScheme.fromSeed(
             seedColor: ThemesColors.m3Baseline, brightness: Brightness.light));
   }
+
+  static ThemeData darkTheme() {
+    return ThemeData.dark(useMaterial3: true).copyWith(
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: ThemesColors.m3Baseline, brightness: Brightness.dark));
+  }
 }
 
 class ThemesColors {
